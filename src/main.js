@@ -26,6 +26,11 @@ import DictResolver from '@/components/DictResolver'
 // 字典标签组件
 import DictTag from '@/components/DictTag'
 
+
+// 注释 这里用 import * as echarts from 'echarts'， 而且加了包以后，要删除已经安装的依存包，然后重新加载 cnpm install， 否则会报错！
+import * as echarts from 'echarts'
+Vue.prototype.$echarts = echarts
+
 // 挂载常用全局方法，import 引入
 Vue.prototype.validatenull = validatenull;
 Vue.prototype.downBlobFile = downBlobFile;
